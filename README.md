@@ -1,12 +1,54 @@
-# React + Vite
+# 🎬 YouTube Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack YouTube clone project replicating core features of YouTube like video browsing, playback, search, and channel view. Built to explore modern web development tools and best practices.
 
-Currently, two official plugins are available:
+![YouTube Clone Banner](https://github.com/Priyam-Kesarwani/Youtube_Clone/assets/your-image-preview.png) <!-- (Optional image banner if you upload one) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Video search with real-time filtering
+- 📺 Video playback with full controls
+- 👤 Channel page with video listings
+- 🌐 Responsive UI for mobile and desktop
+- 🧠 Clean architecture using components and hooks
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS (or styled-components if used)
+- **Backend**: (Optional – add if applicable: Node.js / Express / Firebase / etc.)
+- **API**: YouTube Data API v3 (or mock data)
+- **Routing**: React Router
+- **State Management**: useState, useEffect, Context API
+- **Others**: Axios, React Icons
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots in `/screenshots` folder and update below.
+
+| Home Page | Video Page |
+|-----------|------------|
+| ![Home](screenshots/home.png) | ![Video](screenshots/video.png) |
+
+---
+
+## 📦 Setup Instructions
+
+### 🔧 Prerequisites
+
+- Node.js ≥ 14
+- npm or yarn
+- YouTube Data API key (if using real data)
+
+### 🧪 Local Setup
+
+```bash
+git clone https://github.com/Priyam-Kesarwani/Youtube_Clone.git
+cd Youtube_Clone
+npm install
+npm start
