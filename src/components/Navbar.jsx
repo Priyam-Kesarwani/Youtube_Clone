@@ -5,7 +5,6 @@ import { CiSearch } from "react-icons/ci";
 import { IoMdMic } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { AiOutlineBell } from "react-icons/ai";
-import Avatar from "react-avatar";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUtils } from "../context/UtilsContext";
@@ -120,12 +119,12 @@ const Navbar = () => {
           className="ml-3 border border-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-200 duration-200  "
         />
         <button
-    onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")}
-    className="ml-4 text-xl"
-    aria-label="Toggle dark mode"
-  >
-    {darkMode === "dark" ? <MdDarkMode /> : <MdOutlineDarkMode />}
-  </button>
+          onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")}
+          className="ml-4 text-xl"
+          aria-label="Toggle dark mode"
+        >
+          {darkMode === "dark" ? <MdDarkMode /> : <MdOutlineDarkMode />}
+        </button>
       </div>
       <div className="flex space-x-5 items-center">
         <IoIosSearch
@@ -134,7 +133,11 @@ const Navbar = () => {
         />
         <RiVideoAddLine className="text-2xl" />
         <AiOutlineBell className="text-2xl" />
-        <Avatar src={profile} size="32" round={true} />
+        <img
+          src={profile}
+          alt="Profile"
+          className="w-8 h-8 rounded-full object-cover"
+        />
       </div>
     </div>
   );
